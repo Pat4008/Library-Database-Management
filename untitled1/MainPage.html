@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main Page</title>
+</head>
+<script src="jquery-3.2.1.js"></script>
+<style>
+    div.background {
+
+        top:0;
+        left:0;
+        bottom:0;
+        right:0;
+        background-image:url(backim.jpg);
+        background-attachment: fixed;
+        width: 100%;
+        height: 100vh;
+    }
+    form {
+        right: 50%;
+        left: 50%;
+
+    }
+    html, body{
+        margin: 0;
+        padding: 0;}
+
+
+</style>
+<body>
+    <div class="background">
+        <form method="get" action="Test.php">
+            <input type="hidden" name="num" value=1>
+            <button>Query1</button>
+        </form>
+        <form method="get" action="Test.php">
+            <input type="number" name="iyr" placeholder="YEAR">
+            <input type="number" name="im" placeholder="MONTH">
+            <input type="hidden" name="num" value=2>
+            <button>Query2</button>
+        </form>
+        <form method="get" action="Test.php">
+            <input type="text" name="fname" placeholder="FIRST NAME">
+            <input type="text" name="lname" placeholder="LAST NAME">
+            <input type="hidden" name="num" value=3>
+            <button>Query3</button>
+
+        </form>
+        <form method="get" action="Test.php">
+            <input type="number" name="bid" placeholder="Branch ID">
+            <input type="number" name="iyr" placeholder="YEAR">
+            <input type="number" name="im" placeholder="MONTH">
+            <input type="hidden" name="num" value=4>
+            <button>Query4</button>
+        </form>
+        <form method="get" action="Test.php">
+            <input type="number" name="iyr" placeholder="YEAR">
+            <input type="number" name="im" placeholder="MONTH">
+            <input type="hidden" name="num" value=5>
+            <button>Query5</button>
+        </form>
+        <form method="get" action="Test.php">
+            <input type="text" name="publ" placeholder="PUBLISHER">
+            <input type="hidden" name="num" value=6>
+            <button>Query6</button>
+        </form>
+        <form method="get" action="Test.php">
+            <input type="text" name="fname" placeholder="FIRST NAME">
+            <input type="text" name="lname" placeholder="LAST NAME">
+            <input type="hidden" name="num" value=7>
+            <button>Query7</button>
+        </form>
+        <form method="get" action="Test.php">
+            <input type="number" name="cn" placeholder="CARD NO">
+            <input type="hidden" name="num" value=8>
+            <button>Query8</button>
+        </form>
+
+    </div>
+    <div id="results"></div>
+
+</body>
+<script>
+
+
+</script>
+
+</html>
